@@ -5,6 +5,7 @@
 
 ; ------------------ npm -------------------
 :*C:Ns::npm start
+:*C:Ni::npm install
 
 ; ------------------ git -------------------
 :*C:Ga::git add -A
@@ -14,7 +15,11 @@
 :*C:Gm::git merge master
 :*C:Gr::git reset --hard
 :*C:Gf::git fetch --all
+:*C:Gs::git stash
+:*C:Go::git stash pop
+:*C:Gu::git reset --soft HEAD~1
 
 ; ------------------ ng --------------------
 :*C:Ngc::ng g c
 :*C:Ngs::ng serve
+
