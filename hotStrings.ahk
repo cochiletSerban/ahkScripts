@@ -7,6 +7,7 @@
 :*C:Ns::npm start
 :*C:Ni::npm install
 :*C:Nd::npm run dev
+:*C:Nt::npm run pipeline-test
 
 ; ------------------ git -------------------
 :*C:Ga::git add -A
@@ -14,6 +15,8 @@
 :*C:Gp::git push
 :*C:Gd::git pull
 :*C:Gm::git merge master
+:*C:Gl::git rebase master
+:*C:Gq::git rebase -i master
 :*C:Gr::git reset --hard
 :*C:Gf::git fetch --all
 :*C:Gs::git stash
@@ -22,4 +25,4 @@
 
 ; ------------------ ng --------------------
 :*C:Ngc::ng g c
-:*C:Ngs::ng serve
+:*C:Ngs::ng serve --proxy-config=../../pc.json --ssl=true
