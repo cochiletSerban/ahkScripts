@@ -22,6 +22,7 @@
 :*C:Gs::git stash
 :*C:Go::git stash pop
 :*C:Gu::git reset --soft HEAD~1
+:*C:Gv::git log --oneline --decorate
 
 ; ------------------ ng --------------------
 :*C:Ngc::ng g c
